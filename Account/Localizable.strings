@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  Account
+
+  Created by zhuning on 16/12/6.
+  Copyright © 2016年 zhuning. All rights reserved.
+*/
+
+
+"CANCEL" = "取消";
+"CONFIRM" = "确定";
+"ADD_ACCOUNT" = "新增账号";
+"EDIT_ACCOUNT" = "编辑账号";
+"ADD_ACCOUNT_FAILED" = "保存失败";
+"EMPTY_ACCOUNT_OR_PASSWORD" = "账号和密码不能为空";
+"LOGIN_WITH_FINGER_PRINT" = "使用指纹直接登录";
+"CONFIRM_DELETE_ACCOUNT" = "确定删除账号吗";
+"DELETE_ACCOUNT_REMINDER" = "删除后将无法恢复";
+
+
