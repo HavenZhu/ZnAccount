@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E520B856FD483E3F06C95F5 /* Pods_Account.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F7853FB8A72B30317BFE734 /* Pods_Account.framework */; };
 		341BA99F1DFE7B19006787C9 /* ZNFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341BA99E1DFE7B19006787C9 /* ZNFileManager.swift */; };
 		341BA9A11DFE7FD9006787C9 /* ZNAccountDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341BA9A01DFE7FD9006787C9 /* ZNAccountDetailTableViewController.swift */; };
 		341BA9A31DFE9811006787C9 /* ZNEditAccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341BA9A21DFE9811006787C9 /* ZNEditAccountTableViewController.swift */; };
@@ -21,12 +20,18 @@
 		3487DAA71DEC2E3600D8579B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3487DAA51DEC2E3600D8579B /* Main.storyboard */; };
 		3487DAA91DEC2E3600D8579B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3487DAA81DEC2E3600D8579B /* Assets.xcassets */; };
 		3487DAAC1DEC2E3600D8579B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3487DAAA1DEC2E3600D8579B /* LaunchScreen.storyboard */; };
+		34ADAB0B1F1DAAB60040FA72 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 34ADAB0A1F1DAAB60040FA72 /* FMDatabase.m */; };
+		34ADAB0E1F1DAAC90040FA72 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 34ADAB0D1F1DAAC90040FA72 /* FMDatabaseAdditions.m */; };
+		34ADAB111F1DAAD60040FA72 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 34ADAB101F1DAAD60040FA72 /* FMDatabasePool.m */; };
+		34ADAB171F1DAADD0040FA72 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 34ADAB131F1DAADD0040FA72 /* FMDatabaseQueue.m */; };
+		34ADAB181F1DAADD0040FA72 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 34ADAB161F1DAADD0040FA72 /* FMResultSet.m */; };
+		34ADAB1A1F1DAC8A0040FA72 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 34ADAB191F1DAC8A0040FA72 /* libsqlite3.tbd */; };
 		34C1AA421DF7F6A400E7FC29 /* AccountCategory.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34C1AA411DF7F6A400E7FC29 /* AccountCategory.plist */; };
 		96EB67BC1EF2059F00B113D3 /* ZNDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EB67BB1EF2059F00B113D3 /* ZNDBManager.swift */; };
+		E64D83E97F0CBBA22C97B8B2 /* libPods-Account.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E2ADAF3EB9C43AB14C5EC2C /* libPods-Account.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2F7853FB8A72B30317BFE734 /* Pods_Account.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Account.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		341BA99E1DFE7B19006787C9 /* ZNFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZNFileManager.swift; sourceTree = "<group>"; };
 		341BA9A01DFE7FD9006787C9 /* ZNAccountDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZNAccountDetailTableViewController.swift; sourceTree = "<group>"; };
 		341BA9A21DFE9811006787C9 /* ZNEditAccountTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZNEditAccountTableViewController.swift; sourceTree = "<group>"; };
@@ -42,8 +47,22 @@
 		3487DAA81DEC2E3600D8579B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3487DAAB1DEC2E3600D8579B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3487DAAD1DEC2E3600D8579B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34ADAB081F1DAAAD0040FA72 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		34ADAB091F1DAAB60040FA72 /* Account-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Account-Bridging-Header.h"; sourceTree = "<group>"; };
+		34ADAB0A1F1DAAB60040FA72 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		34ADAB0C1F1DAAC90040FA72 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		34ADAB0D1F1DAAC90040FA72 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		34ADAB0F1F1DAAD10040FA72 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		34ADAB101F1DAAD60040FA72 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		34ADAB121F1DAADD0040FA72 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		34ADAB131F1DAADD0040FA72 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		34ADAB141F1DAADD0040FA72 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		34ADAB151F1DAADD0040FA72 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		34ADAB161F1DAADD0040FA72 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		34ADAB191F1DAC8A0040FA72 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		34C1AA411DF7F6A400E7FC29 /* AccountCategory.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AccountCategory.plist; sourceTree = "<group>"; };
 		42B8A1F93AB864669A684EA2 /* Pods-Account.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Account.release.xcconfig"; path = "Pods/Target Support Files/Pods-Account/Pods-Account.release.xcconfig"; sourceTree = "<group>"; };
+		5E2ADAF3EB9C43AB14C5EC2C /* libPods-Account.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Account.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96EB67BB1EF2059F00B113D3 /* ZNDBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZNDBManager.swift; sourceTree = "<group>"; };
 		A79217B1AD791E5702594DD8 /* Pods-Account.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Account.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Account/Pods-Account.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,7 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E520B856FD483E3F06C95F5 /* Pods_Account.framework in Frameworks */,
+				34ADAB1A1F1DAC8A0040FA72 /* libsqlite3.tbd in Frameworks */,
+				E64D83E97F0CBBA22C97B8B2 /* libPods-Account.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +83,8 @@
 		174F466B7590C36225800BBD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2F7853FB8A72B30317BFE734 /* Pods_Account.framework */,
+				34ADAB191F1DAC8A0040FA72 /* libsqlite3.tbd */,
+				5E2ADAF3EB9C43AB14C5EC2C /* libPods-Account.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -98,15 +119,10 @@
 		3487DAA01DEC2E3500D8579B /* Account */ = {
 			isa = PBXGroup;
 			children = (
-				3466B37A1DF5552100BE50A6 /* ZNAccountInfo.swift */,
-				341BA99E1DFE7B19006787C9 /* ZNFileManager.swift */,
-				96EB67BB1EF2059F00B113D3 /* ZNDBManager.swift */,
-				3466B37D1DF6A0A200BE50A6 /* ZNSignInViewController.swift */,
-				3466B3861DF6B8BB00BE50A6 /* ZNAccountListViewController.swift */,
-				341BA9A01DFE7FD9006787C9 /* ZNAccountDetailTableViewController.swift */,
-				341BA9A21DFE9811006787C9 /* ZNEditAccountTableViewController.swift */,
-				3466B3AC1DF7EED300BE50A6 /* ZNAddNewAccountTableViewController.swift */,
-				3466B3AE1DF7F0A500BE50A6 /* ZNAccountDetailTableViewCell.swift */,
+				34ADAAE41F1DA7BB0040FA72 /* Libs */,
+				34ADAAE01F1C62350040FA72 /* Model */,
+				34ADAADF1F1C62080040FA72 /* Manager */,
+				34ADAADE1F1C62040040FA72 /* Controller */,
 				3487DAA11DEC2E3500D8579B /* AppDelegate.swift */,
 				3487DAA51DEC2E3600D8579B /* Main.storyboard */,
 				34C1AA411DF7F6A400E7FC29 /* AccountCategory.plist */,
@@ -116,6 +132,71 @@
 				3466B3A81DF6C5A900BE50A6 /* Localizable.strings */,
 			);
 			path = Account;
+			sourceTree = "<group>";
+		};
+		34ADAADE1F1C62040040FA72 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				34ADAAE11F1C62450040FA72 /* View */,
+				3466B37D1DF6A0A200BE50A6 /* ZNSignInViewController.swift */,
+				3466B3861DF6B8BB00BE50A6 /* ZNAccountListViewController.swift */,
+				341BA9A01DFE7FD9006787C9 /* ZNAccountDetailTableViewController.swift */,
+				341BA9A21DFE9811006787C9 /* ZNEditAccountTableViewController.swift */,
+				3466B3AC1DF7EED300BE50A6 /* ZNAddNewAccountTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		34ADAADF1F1C62080040FA72 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				341BA99E1DFE7B19006787C9 /* ZNFileManager.swift */,
+				96EB67BB1EF2059F00B113D3 /* ZNDBManager.swift */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		34ADAAE01F1C62350040FA72 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3466B37A1DF5552100BE50A6 /* ZNAccountInfo.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		34ADAAE11F1C62450040FA72 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3466B3AE1DF7F0A500BE50A6 /* ZNAccountDetailTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		34ADAAE41F1DA7BB0040FA72 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				34ADAAE51F1DA7BB0040FA72 /* FMDB */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		34ADAAE51F1DA7BB0040FA72 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				34ADAB081F1DAAAD0040FA72 /* FMDatabase.h */,
+				34ADAB0A1F1DAAB60040FA72 /* FMDatabase.m */,
+				34ADAB0C1F1DAAC90040FA72 /* FMDatabaseAdditions.h */,
+				34ADAB0D1F1DAAC90040FA72 /* FMDatabaseAdditions.m */,
+				34ADAB0F1F1DAAD10040FA72 /* FMDatabasePool.h */,
+				34ADAB101F1DAAD60040FA72 /* FMDatabasePool.m */,
+				34ADAB121F1DAADD0040FA72 /* FMDatabaseQueue.h */,
+				34ADAB131F1DAADD0040FA72 /* FMDatabaseQueue.m */,
+				34ADAB141F1DAADD0040FA72 /* FMDB.h */,
+				34ADAB151F1DAADD0040FA72 /* FMResultSet.h */,
+				34ADAB161F1DAADD0040FA72 /* FMResultSet.m */,
+				34ADAB091F1DAAB60040FA72 /* Account-Bridging-Header.h */,
+			);
+			path = FMDB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +235,7 @@
 					3487DA9D1DEC2E3500D8579B = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = P558RBRSUG;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -246,14 +328,19 @@
 			files = (
 				341BA99F1DFE7B19006787C9 /* ZNFileManager.swift in Sources */,
 				96EB67BC1EF2059F00B113D3 /* ZNDBManager.swift in Sources */,
+				34ADAB111F1DAAD60040FA72 /* FMDatabasePool.m in Sources */,
+				34ADAB171F1DAADD0040FA72 /* FMDatabaseQueue.m in Sources */,
 				3466B37E1DF6A0A200BE50A6 /* ZNSignInViewController.swift in Sources */,
 				341BA9A11DFE7FD9006787C9 /* ZNAccountDetailTableViewController.swift in Sources */,
 				3466B3871DF6B8BB00BE50A6 /* ZNAccountListViewController.swift in Sources */,
 				3487DAA21DEC2E3500D8579B /* AppDelegate.swift in Sources */,
 				341BA9A31DFE9811006787C9 /* ZNEditAccountTableViewController.swift in Sources */,
+				34ADAB181F1DAADD0040FA72 /* FMResultSet.m in Sources */,
 				3466B3AF1DF7F0A500BE50A6 /* ZNAccountDetailTableViewCell.swift in Sources */,
 				3466B3AD1DF7EED300BE50A6 /* ZNAddNewAccountTableViewController.swift in Sources */,
+				34ADAB0B1F1DAAB60040FA72 /* FMDatabase.m in Sources */,
 				3466B37B1DF5552100BE50A6 /* ZNAccountInfo.swift in Sources */,
+				34ADAB0E1F1DAAC90040FA72 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,12 +464,15 @@
 			baseConfigurationReference = A79217B1AD791E5702594DD8 /* Pods-Account.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = P558RBRSUG;
 				INFOPLIST_FILE = Account/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.haven.znAccount;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Account/Libs/FMDB/Account-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -392,12 +482,14 @@
 			baseConfigurationReference = 42B8A1F93AB864669A684EA2 /* Pods-Account.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = P558RBRSUG;
 				INFOPLIST_FILE = Account/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.haven.znAccount;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Account/Libs/FMDB/Account-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

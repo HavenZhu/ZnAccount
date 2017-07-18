@@ -11,8 +11,8 @@ import UIKit
 class ZNAccountListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
 
     var selectedIndexPath: IndexPath?
-    var accounts = [Dictionary<String, String>]()
-    var displayAccounts = [Dictionary<String, String>]()
+    var accounts = [ZNAccountInfo]()
+    var displayAccounts = [ZNAccountInfo]()
     
     // MARK: - IBOutlets
     @IBOutlet weak var accountNameSearchBar: UISearchBar!
@@ -31,12 +31,9 @@ class ZNAccountListViewController: UIViewController, UITableViewDelegate, UITabl
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = false
         
-        if !isFileExist(path: ZNFileManager.accountFilePath()) {
-            ZNFileManager.saveFile(accoutList: [])
-        }
-        
-        self.accounts = ZNFileManager.getFile()
+        self.accounts = ZNDBManager.shared.loadAccountInfos()
         self.displayAccounts = self.accounts
+        
         filterListWithName(self.accountNameSearchBar.text)
         self.accountTableView.reloadData()
         
@@ -66,7 +63,7 @@ class ZNAccountListViewController: UIViewController, UITableViewDelegate, UITabl
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "accountCell", for: indexPath)
-        cell.textLabel?.text = self.displayAccounts[indexPath.row]["belongTo"]
+        cell.textLabel?.text = self.displayAccounts[indexPath.row].belongTo
         
         return cell
     }
@@ -92,19 +89,14 @@ class ZNAccountListViewController: UIViewController, UITableViewDelegate, UITabl
             let row = (self.accounts as NSArray).index(of: self.displayAccounts[(indexPath?.row)!])
             self.selectedIndexPath = IndexPath(row: row, section: 0)
             vc.index = self.selectedIndexPath?.row
-            
-            let accountDic = self.displayAccounts[(indexPath?.row)!]
-            vc.accountDetail = ZNAccountInfo(belongTo: accountDic["belongTo"]!,
-                                             username: accountDic["username"]!,
-                                             password: accountDic["password"]!,
-                                             note: accountDic["note"])
+            vc.accountDetail = self.displayAccounts[(indexPath?.row)!]
         }
     }
     
     // MARK: - unwindToDetail
     @IBAction func unwindToAccountList(sender: UIStoryboardSegue) {
         if let sourceVC = sender.source as? ZNAddNewAccountTableViewController {
-            ZNFileManager.addAccount(accountInfo:sourceVC.accountDetail!)
+            ZNDBManager.shared.insertAccountInfo(account: sourceVC.accountDetail!)
         }
     }
         
@@ -117,7 +109,7 @@ class ZNAccountListViewController: UIViewController, UITableViewDelegate, UITabl
         if name == nil || (name?.isEmpty)! {
             self.displayAccounts = self.accounts
         } else {
-            self.displayAccounts = self.accounts.filter{ ($0["belongTo"]?.contains(name!))! }
+            self.displayAccounts = self.accounts.filter{ ($0.belongTo.contains(name!)) }
         }
         
         self.accountTableView.reloadData()
@@ -130,10 +122,11 @@ class ZNAccountListViewController: UIViewController, UITableViewDelegate, UITabl
         let confirmAction = UIAlertAction.init(title: NSLocalizedString("CONFIRM", comment: "确定"),
                                                style: UIAlertActionStyle.default,
                                                handler: { (action) in
+            ZNDBManager.shared.deleteAccountInfo(account: self.accounts[indexPath.row])
+                                                
             let row = (self.accounts as NSArray).index(of: self.displayAccounts[indexPath.row])
             self.displayAccounts.remove(at: indexPath.row)
             self.accounts.remove(at: row)
-            ZNFileManager.saveFile(accoutList: self.accounts)
             DispatchQueue.main.async(execute: {
                 self.accountTableView.deleteRows(at: [indexPath], with: .fade)
             })

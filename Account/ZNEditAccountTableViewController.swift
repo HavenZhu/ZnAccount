@@ -66,6 +66,7 @@ class ZNEditAccountTableViewController: UITableViewController {
     
     func isSaveAccountInfoSuccess() -> Bool {
         if let accountInfo = ZNFileManager.getAccountInfo(from: self.tableView) {
+            accountInfo.ID = (self.accountDetail?.ID)!
             self.accountDetail = accountInfo
             return true
         } else {

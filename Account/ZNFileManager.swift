@@ -21,50 +21,6 @@ class ZNFileManager {
         return documentPath
     }
     
-//    static func tempAccountFilePath() -> String {
-//        let tempPath = Bundle.main.path(forResource: "accountLists", ofType: "plist")
-//        return tempPath!
-//    }
-    
-    static func getFile() -> [Dictionary<String, String>] {
-        let data = try! Data(contentsOf: URL(fileURLWithPath: ZNFileManager.accountFilePath()))
-        let unarchiver = NSKeyedUnarchiver(forReadingWith: data)
-        let accounts = unarchiver.decodeObject(forKey: "accountLists") as! Array<Dictionary<String, String>>
-        unarchiver.finishDecoding()
-        
-        return accounts
-    }
-    
-    static func saveFile(accoutList: [Dictionary<String, String>]) {
-        let data = NSMutableData()
-        let archiver = NSKeyedArchiver(forWritingWith: data)
-        archiver.encode(accoutList as NSArray, forKey: "accountLists")
-        archiver.finishEncoding()
-        data.write(toFile: ZNFileManager.accountFilePath(), atomically: true)
-    }
-    
-    static func updateAccount(accountInfo: ZNAccountInfo, at index: Int) {
-        var accountList = ZNFileManager.getFile()
-        let thisAccount = ["belongTo": accountInfo.belongTo,
-                           "username": accountInfo.username,
-                           "password": accountInfo.password,
-                           "note": (accountInfo.note == nil ? "" : accountInfo.note)]
-
-        accountList[index] = thisAccount as! Dictionary<String, String>
-        ZNFileManager.saveFile(accoutList: accountList)
-    }
-    
-    static func addAccount(accountInfo: ZNAccountInfo) {
-        var accountList = ZNFileManager.getFile()
-        let thisAccount = ["belongTo": accountInfo.belongTo,
-                           "username": accountInfo.username,
-                           "password": accountInfo.password,
-                           "note": (accountInfo.note == nil ? "" : accountInfo.note)]
-        
-        accountList.append(thisAccount as! Dictionary<String, String>)
-        ZNFileManager.saveFile(accoutList: accountList)
-    }
-    
     static func getAccountInfo(from tableview: UITableView) -> ZNAccountInfo? {
         var belongTo: String?
         var username: String?

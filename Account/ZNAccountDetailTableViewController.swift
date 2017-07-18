@@ -60,7 +60,7 @@ class ZNAccountDetailTableViewController: UITableViewController {
         if let sourceVC = sender.source as? ZNEditAccountTableViewController {
             self.accountDetail = sourceVC.accountDetail
             self.tableView.reloadData()
-            ZNFileManager.updateAccount(accountInfo: self.accountDetail!, at: self.index!)
+            ZNDBManager.shared.updateAccountInfo(account: self.accountDetail!)
             self.title = self.accountDetail?.belongTo
         }
     }
