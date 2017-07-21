@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		341BA99F1DFE7B19006787C9 /* ZNFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341BA99E1DFE7B19006787C9 /* ZNFileManager.swift */; };
 		341BA9A11DFE7FD9006787C9 /* ZNAccountDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341BA9A01DFE7FD9006787C9 /* ZNAccountDetailTableViewController.swift */; };
 		341BA9A31DFE9811006787C9 /* ZNEditAccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341BA9A21DFE9811006787C9 /* ZNEditAccountTableViewController.swift */; };
 		3466B37B1DF5552100BE50A6 /* ZNAccountInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3466B37A1DF5552100BE50A6 /* ZNAccountInfo.swift */; };
@@ -32,7 +31,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		341BA99E1DFE7B19006787C9 /* ZNFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZNFileManager.swift; sourceTree = "<group>"; };
 		341BA9A01DFE7FD9006787C9 /* ZNAccountDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZNAccountDetailTableViewController.swift; sourceTree = "<group>"; };
 		341BA9A21DFE9811006787C9 /* ZNEditAccountTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZNEditAccountTableViewController.swift; sourceTree = "<group>"; };
 		3466B37A1DF5552100BE50A6 /* ZNAccountInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZNAccountInfo.swift; sourceTree = "<group>"; };
@@ -150,7 +148,6 @@
 		34ADAADF1F1C62080040FA72 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				341BA99E1DFE7B19006787C9 /* ZNFileManager.swift */,
 				96EB67BB1EF2059F00B113D3 /* ZNDBManager.swift */,
 			);
 			name = Manager;
@@ -326,7 +323,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				341BA99F1DFE7B19006787C9 /* ZNFileManager.swift in Sources */,
 				96EB67BC1EF2059F00B113D3 /* ZNDBManager.swift in Sources */,
 				34ADAB111F1DAAD60040FA72 /* FMDatabasePool.m in Sources */,
 				34ADAB171F1DAADD0040FA72 /* FMDatabaseQueue.m in Sources */,

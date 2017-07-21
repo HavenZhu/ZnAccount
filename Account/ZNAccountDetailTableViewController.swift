@@ -8,48 +8,43 @@
 
 import UIKit
 
-class ZNAccountDetailTableViewController: UITableViewController {
-
-    var accountDetail: ZNAccountInfo?
-    var index: Int?
-    var categories = [String]()
+class ZNAccountDetailTableViewController: ZNAddNewAccountTableViewController {
     
     // MARK: - view controller funciton
+    override func awakeFromNib() {
+        self.type = "detail"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        initParameters()
+        self.title = self.accountDetail.belongTo
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    // MARK: - Table view data source
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return categories.count
-    }
-    
     // MARK: - tableview delegate
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AccountDetailCell", for: indexPath) as! ZNAccountDetailTableViewCell
         
-        cell.lbCategory.text = categories[indexPath.row]
+        cell.lbCategory.text = self.categories[indexPath.row]
         if indexPath.row == 0 {
-            cell.tfContent.text = self.accountDetail?.username
+            cell.tfContent.text = self.accountDetail.username
         } else if indexPath.row == 1 {
-            cell.tfContent.text = self.accountDetail?.password
+            cell.tfContent.text = self.accountDetail.password
         } else if indexPath.row == 2 {
-            cell.tfContent.text = self.accountDetail?.note
+            cell.tfContent.text = self.accountDetail.note
         }
         
         return cell
     }
     
     // MARK: - Navigation
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        return true
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let editVC = segue.destination as! ZNEditAccountTableViewController
         editVC.accountDetail = self.accountDetail
@@ -59,18 +54,11 @@ class ZNAccountDetailTableViewController: UITableViewController {
     @IBAction func unwindToDetail(sender: UIStoryboardSegue) {
         if let sourceVC = sender.source as? ZNEditAccountTableViewController {
             self.accountDetail = sourceVC.accountDetail
+            ZNDBManager.shared.updateAccountInfo(account: self.accountDetail)
             self.tableView.reloadData()
-            ZNDBManager.shared.updateAccountInfo(account: self.accountDetail!)
-            self.title = self.accountDetail?.belongTo
+            self.title = self.accountDetail.belongTo
         }
     }
     
-    // MARK: - 私有方法
-    func initParameters() {
-        let path = Bundle.main.path(forResource: "AccountCategory", ofType: "plist")
-        let dic = NSDictionary(contentsOfFile: path!) as! Dictionary<String, [String]>;
-        categories = dic["detail"]!
-        self.title = self.accountDetail?.belongTo
-    }
 
 }

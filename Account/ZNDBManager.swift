@@ -62,7 +62,7 @@ class ZNDBManager {
                 while ret.next() {
                     if let ID = ret.string(forColumn: "ID"), let belongTo = ret.string(forColumn: "belongTo"), let username = ret.string(forColumn: "username"), let password = ret.string(forColumn: "password"), let note = ret.string(forColumn: "note") {
                         
-                        accounts.append(ZNAccountInfo.init(ID: Int(ID)!, belongTo: belongTo, username: username, password: password, note: note)!)
+                        accounts.append(ZNAccountInfo.init(ID: Int(ID)!, belongTo: belongTo, username: username, password: password, note: note))
                     }
                 }
             } catch  {

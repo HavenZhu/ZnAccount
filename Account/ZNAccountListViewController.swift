@@ -88,7 +88,6 @@ class ZNAccountListViewController: UIViewController, UITableViewDelegate, UITabl
             let indexPath = self.accountTableView.indexPath(for: cell)
             let row = (self.accounts as NSArray).index(of: self.displayAccounts[(indexPath?.row)!])
             self.selectedIndexPath = IndexPath(row: row, section: 0)
-            vc.index = self.selectedIndexPath?.row
             vc.accountDetail = self.displayAccounts[(indexPath?.row)!]
         }
     }
@@ -96,15 +95,11 @@ class ZNAccountListViewController: UIViewController, UITableViewDelegate, UITabl
     // MARK: - unwindToDetail
     @IBAction func unwindToAccountList(sender: UIStoryboardSegue) {
         if let sourceVC = sender.source as? ZNAddNewAccountTableViewController {
-            ZNDBManager.shared.insertAccountInfo(account: sourceVC.accountDetail!)
+            ZNDBManager.shared.insertAccountInfo(account: sourceVC.accountDetail)
         }
     }
         
     // MARK: - 私有方法
-    func isFileExist(path: String) -> Bool {
-        return FileManager.default.fileExists(atPath: path)
-    }
-    
     func filterListWithName(_ name: String?) {
         if name == nil || (name?.isEmpty)! {
             self.displayAccounts = self.accounts
