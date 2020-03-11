@@ -7,14 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		341BA9A11DFE7FD9006787C9 /* ZNAccountDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341BA9A01DFE7FD9006787C9 /* ZNAccountDetailTableViewController.swift */; };
-		341BA9A31DFE9811006787C9 /* ZNEditAccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341BA9A21DFE9811006787C9 /* ZNEditAccountTableViewController.swift */; };
-		3466B37B1DF5552100BE50A6 /* ZNAccountInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3466B37A1DF5552100BE50A6 /* ZNAccountInfo.swift */; };
-		3466B37E1DF6A0A200BE50A6 /* ZNSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3466B37D1DF6A0A200BE50A6 /* ZNSignInViewController.swift */; };
-		3466B3871DF6B8BB00BE50A6 /* ZNAccountListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3466B3861DF6B8BB00BE50A6 /* ZNAccountListViewController.swift */; };
 		3466B3A91DF6C5A900BE50A6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3466B3A81DF6C5A900BE50A6 /* Localizable.strings */; };
-		3466B3AD1DF7EED300BE50A6 /* ZNAddNewAccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3466B3AC1DF7EED300BE50A6 /* ZNAddNewAccountTableViewController.swift */; };
-		3466B3AF1DF7F0A500BE50A6 /* ZNAccountDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3466B3AE1DF7F0A500BE50A6 /* ZNAccountDetailTableViewCell.swift */; };
 		3487DAA21DEC2E3500D8579B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3487DAA11DEC2E3500D8579B /* AppDelegate.swift */; };
 		3487DAA71DEC2E3600D8579B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3487DAA51DEC2E3600D8579B /* Main.storyboard */; };
 		3487DAA91DEC2E3600D8579B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3487DAA81DEC2E3600D8579B /* Assets.xcassets */; };
@@ -26,19 +19,19 @@
 		34ADAB181F1DAADD0040FA72 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 34ADAB161F1DAADD0040FA72 /* FMResultSet.m */; };
 		34ADAB1A1F1DAC8A0040FA72 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 34ADAB191F1DAC8A0040FA72 /* libsqlite3.tbd */; };
 		34C1AA421DF7F6A400E7FC29 /* AccountCategory.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34C1AA411DF7F6A400E7FC29 /* AccountCategory.plist */; };
-		96EB67BC1EF2059F00B113D3 /* ZNDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EB67BB1EF2059F00B113D3 /* ZNDBManager.swift */; };
+		840D94082419355E004CE463 /* ZNAccountDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D93FD2419355D004CE463 /* ZNAccountDetailTableViewController.swift */; };
+		840D94092419355E004CE463 /* ZNEditAccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D93FE2419355D004CE463 /* ZNEditAccountTableViewController.swift */; };
+		840D940A2419355E004CE463 /* ZNSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D93FF2419355D004CE463 /* ZNSignInViewController.swift */; };
+		840D940B2419355E004CE463 /* ZNAccountListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D94002419355D004CE463 /* ZNAccountListViewController.swift */; };
+		840D940C2419355E004CE463 /* ZNAccountDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D94022419355D004CE463 /* ZNAccountDetailTableViewCell.swift */; };
+		840D940D2419355E004CE463 /* ZNAddNewAccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D94032419355D004CE463 /* ZNAddNewAccountTableViewController.swift */; };
+		840D940E2419355E004CE463 /* ZNDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D94052419355E004CE463 /* ZNDBManager.swift */; };
+		840D940F2419355E004CE463 /* ZNAccountInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D94072419355E004CE463 /* ZNAccountInfo.swift */; };
 		E64D83E97F0CBBA22C97B8B2 /* libPods-Account.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E2ADAF3EB9C43AB14C5EC2C /* libPods-Account.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		341BA9A01DFE7FD9006787C9 /* ZNAccountDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZNAccountDetailTableViewController.swift; sourceTree = "<group>"; };
-		341BA9A21DFE9811006787C9 /* ZNEditAccountTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZNEditAccountTableViewController.swift; sourceTree = "<group>"; };
-		3466B37A1DF5552100BE50A6 /* ZNAccountInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZNAccountInfo.swift; sourceTree = "<group>"; };
-		3466B37D1DF6A0A200BE50A6 /* ZNSignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZNSignInViewController.swift; sourceTree = "<group>"; };
-		3466B3861DF6B8BB00BE50A6 /* ZNAccountListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZNAccountListViewController.swift; sourceTree = "<group>"; };
 		3466B3A81DF6C5A900BE50A6 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		3466B3AC1DF7EED300BE50A6 /* ZNAddNewAccountTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZNAddNewAccountTableViewController.swift; sourceTree = "<group>"; };
-		3466B3AE1DF7F0A500BE50A6 /* ZNAccountDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZNAccountDetailTableViewCell.swift; sourceTree = "<group>"; };
 		3487DA9E1DEC2E3500D8579B /* Account.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Account.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3487DAA11DEC2E3500D8579B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3487DAA61DEC2E3600D8579B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,7 +54,14 @@
 		34C1AA411DF7F6A400E7FC29 /* AccountCategory.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AccountCategory.plist; sourceTree = "<group>"; };
 		42B8A1F93AB864669A684EA2 /* Pods-Account.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Account.release.xcconfig"; path = "Pods/Target Support Files/Pods-Account/Pods-Account.release.xcconfig"; sourceTree = "<group>"; };
 		5E2ADAF3EB9C43AB14C5EC2C /* libPods-Account.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Account.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		96EB67BB1EF2059F00B113D3 /* ZNDBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZNDBManager.swift; sourceTree = "<group>"; };
+		840D93FD2419355D004CE463 /* ZNAccountDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZNAccountDetailTableViewController.swift; sourceTree = "<group>"; };
+		840D93FE2419355D004CE463 /* ZNEditAccountTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZNEditAccountTableViewController.swift; sourceTree = "<group>"; };
+		840D93FF2419355D004CE463 /* ZNSignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZNSignInViewController.swift; sourceTree = "<group>"; };
+		840D94002419355D004CE463 /* ZNAccountListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZNAccountListViewController.swift; sourceTree = "<group>"; };
+		840D94022419355D004CE463 /* ZNAccountDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZNAccountDetailTableViewCell.swift; sourceTree = "<group>"; };
+		840D94032419355D004CE463 /* ZNAddNewAccountTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZNAddNewAccountTableViewController.swift; sourceTree = "<group>"; };
+		840D94052419355E004CE463 /* ZNDBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZNDBManager.swift; sourceTree = "<group>"; };
+		840D94072419355E004CE463 /* ZNAccountInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZNAccountInfo.swift; sourceTree = "<group>"; };
 		A79217B1AD791E5702594DD8 /* Pods-Account.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Account.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Account/Pods-Account.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,9 +118,9 @@
 			isa = PBXGroup;
 			children = (
 				34ADAAE41F1DA7BB0040FA72 /* Libs */,
-				34ADAAE01F1C62350040FA72 /* Model */,
-				34ADAADF1F1C62080040FA72 /* Manager */,
-				34ADAADE1F1C62040040FA72 /* Controller */,
+				840D94042419355E004CE463 /* Manager */,
+				840D94062419355E004CE463 /* Model */,
+				840D93FC2419355D004CE463 /* Controller */,
 				3487DAA11DEC2E3500D8579B /* AppDelegate.swift */,
 				3487DAA51DEC2E3600D8579B /* Main.storyboard */,
 				34C1AA411DF7F6A400E7FC29 /* AccountCategory.plist */,
@@ -130,43 +130,6 @@
 				3466B3A81DF6C5A900BE50A6 /* Localizable.strings */,
 			);
 			path = Account;
-			sourceTree = "<group>";
-		};
-		34ADAADE1F1C62040040FA72 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				34ADAAE11F1C62450040FA72 /* View */,
-				3466B37D1DF6A0A200BE50A6 /* ZNSignInViewController.swift */,
-				3466B3861DF6B8BB00BE50A6 /* ZNAccountListViewController.swift */,
-				341BA9A01DFE7FD9006787C9 /* ZNAccountDetailTableViewController.swift */,
-				341BA9A21DFE9811006787C9 /* ZNEditAccountTableViewController.swift */,
-				3466B3AC1DF7EED300BE50A6 /* ZNAddNewAccountTableViewController.swift */,
-			);
-			name = Controller;
-			sourceTree = "<group>";
-		};
-		34ADAADF1F1C62080040FA72 /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				96EB67BB1EF2059F00B113D3 /* ZNDBManager.swift */,
-			);
-			name = Manager;
-			sourceTree = "<group>";
-		};
-		34ADAAE01F1C62350040FA72 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				3466B37A1DF5552100BE50A6 /* ZNAccountInfo.swift */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		34ADAAE11F1C62450040FA72 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				3466B3AE1DF7F0A500BE50A6 /* ZNAccountDetailTableViewCell.swift */,
-			);
-			name = View;
 			sourceTree = "<group>";
 		};
 		34ADAAE41F1DA7BB0040FA72 /* Libs */ = {
@@ -195,6 +158,46 @@
 			);
 			path = FMDB;
 			sourceTree = "<group>";
+		};
+		840D93FC2419355D004CE463 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				840D94012419355D004CE463 /* View */,
+				840D93FD2419355D004CE463 /* ZNAccountDetailTableViewController.swift */,
+				840D93FE2419355D004CE463 /* ZNEditAccountTableViewController.swift */,
+				840D93FF2419355D004CE463 /* ZNSignInViewController.swift */,
+				840D94002419355D004CE463 /* ZNAccountListViewController.swift */,
+				840D94032419355D004CE463 /* ZNAddNewAccountTableViewController.swift */,
+			);
+			name = Controller;
+			path = Account/Controller;
+			sourceTree = SOURCE_ROOT;
+		};
+		840D94012419355D004CE463 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				840D94022419355D004CE463 /* ZNAccountDetailTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		840D94042419355E004CE463 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				840D94052419355E004CE463 /* ZNDBManager.swift */,
+			);
+			name = Manager;
+			path = Account/Manager;
+			sourceTree = SOURCE_ROOT;
+		};
+		840D94062419355E004CE463 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				840D94072419355E004CE463 /* ZNAccountInfo.swift */,
+			);
+			name = Model;
+			path = Account/Model;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -242,6 +245,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -323,19 +327,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96EB67BC1EF2059F00B113D3 /* ZNDBManager.swift in Sources */,
+				840D940B2419355E004CE463 /* ZNAccountListViewController.swift in Sources */,
+				840D940F2419355E004CE463 /* ZNAccountInfo.swift in Sources */,
+				840D940A2419355E004CE463 /* ZNSignInViewController.swift in Sources */,
 				34ADAB111F1DAAD60040FA72 /* FMDatabasePool.m in Sources */,
+				840D940E2419355E004CE463 /* ZNDBManager.swift in Sources */,
 				34ADAB171F1DAADD0040FA72 /* FMDatabaseQueue.m in Sources */,
-				3466B37E1DF6A0A200BE50A6 /* ZNSignInViewController.swift in Sources */,
-				341BA9A11DFE7FD9006787C9 /* ZNAccountDetailTableViewController.swift in Sources */,
-				3466B3871DF6B8BB00BE50A6 /* ZNAccountListViewController.swift in Sources */,
 				3487DAA21DEC2E3500D8579B /* AppDelegate.swift in Sources */,
-				341BA9A31DFE9811006787C9 /* ZNEditAccountTableViewController.swift in Sources */,
+				840D940C2419355E004CE463 /* ZNAccountDetailTableViewCell.swift in Sources */,
+				840D94092419355E004CE463 /* ZNEditAccountTableViewController.swift in Sources */,
 				34ADAB181F1DAADD0040FA72 /* FMResultSet.m in Sources */,
-				3466B3AF1DF7F0A500BE50A6 /* ZNAccountDetailTableViewCell.swift in Sources */,
-				3466B3AD1DF7EED300BE50A6 /* ZNAddNewAccountTableViewController.swift in Sources */,
 				34ADAB0B1F1DAAB60040FA72 /* FMDatabase.m in Sources */,
-				3466B37B1DF5552100BE50A6 /* ZNAccountInfo.swift in Sources */,
+				840D94082419355E004CE463 /* ZNAccountDetailTableViewController.swift in Sources */,
+				840D940D2419355E004CE463 /* ZNAddNewAccountTableViewController.swift in Sources */,
 				34ADAB0E1F1DAAC90040FA72 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,7 +473,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Account/Libs/FMDB/Account-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -486,7 +490,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.haven.znAccount;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Account/Libs/FMDB/Account-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

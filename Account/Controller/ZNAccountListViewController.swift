@@ -73,7 +73,7 @@ class ZNAccountListViewController: UIViewController, UITableViewDelegate, UITabl
         return true
     }
     
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    internal func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             showConfirmAlert(with: indexPath)
         }
@@ -113,9 +113,9 @@ class ZNAccountListViewController: UIViewController, UITableViewDelegate, UITabl
     func showConfirmAlert(with indexPath: IndexPath) {
         let alert = UIAlertController.init(title: NSLocalizedString("CONFIRM_DELETE_ACCOUNT", comment: "确定删除账号吗？"),
                                            message: NSLocalizedString("DELETE_ACCOUNT_REMINDER", comment: "删除后将无法恢复"),
-                                           preferredStyle: UIAlertControllerStyle.alert)
+                                           preferredStyle: UIAlertController.Style.alert)
         let confirmAction = UIAlertAction.init(title: NSLocalizedString("CONFIRM", comment: "确定"),
-                                               style: UIAlertActionStyle.default,
+                                               style: UIAlertAction.Style.default,
                                                handler: { (action) in
             ZNDBManager.shared.deleteAccountInfo(account: self.accounts[indexPath.row])
                                                 
@@ -127,7 +127,7 @@ class ZNAccountListViewController: UIViewController, UITableViewDelegate, UITabl
             })
         })
         let cancelAction = UIAlertAction.init(title: NSLocalizedString("CANCEL", comment: "取消"),
-                                              style: UIAlertActionStyle.cancel,
+                                              style: UIAlertAction.Style.cancel,
                                               handler:nil)
         alert.addAction(confirmAction)
         alert.addAction(cancelAction)

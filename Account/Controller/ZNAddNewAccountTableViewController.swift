@@ -88,9 +88,9 @@ class ZNAddNewAccountTableViewController: UITableViewController {
     func createCanNotSaveAlert() -> UIAlertController {
         let alert = UIAlertController.init(title: NSLocalizedString("ADD_ACCOUNT_FAILED", comment: "保存失败"),
                                            message: NSLocalizedString("EMPTY_ACCOUNT_OR_PASSWORD", comment: "账号和密码不能为空"),
-                                           preferredStyle: UIAlertControllerStyle.alert)
+                                           preferredStyle: UIAlertController.Style.alert)
         let confirmAction = UIAlertAction.init(title: NSLocalizedString("CONFIRM", comment: "确定"),
-                                               style: UIAlertActionStyle.default,
+                                               style: UIAlertAction.Style.default,
                                                handler: nil)
         alert.addAction(confirmAction)
         
